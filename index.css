@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+#add-button {
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    margin: 10px 10px 0 10px;
+    background-color: #CDC;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px;
+}
+
+.todo-entry .icon:hover {
+    cursor: pointer;
+}
+
+.todo-entry {
+    width: 400px;
+    background-color: #EED;
+    box-shadow: 3px 3px 3px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 280px 30px 30px 30px 30px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: start;
+}
+.todo-entry.ready {
+    background-color: #CEC;
+}
+
+.todo-entry .description {
+    flex-grow: 2;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', sans-serif;
+    padding-inline: 8px;
+    /* background-color:rgb(217, 255, 0); */
+}
+.todo-entry.ready .description {
+    font-size: 14px;
+}
+.todo-entry.ready .description span {
+    /* background-color: rgb(0, 162, 255); */
+    vertical-align:middle;
+}
+
+.todo-entry .icon {
+    margin: 3px;
+    background-color: #CEC;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px;
+    text-align: center;
+    border: none;
+}
+.todo-entry .delete {
+    background-color: #ECC;
+}
+.todo-entry .up, .todo-entry .down {
+    background-color: #EEC;
+}
